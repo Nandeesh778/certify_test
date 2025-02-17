@@ -1,23 +1,26 @@
 {
-  "assertionMethod": [
-    "did:web:Nandeesh778.github.io:certify_test:certify_did#key-0"
+  "issuer": "https://dev.credissuer.com/esignet",
+  "authorization_endpoint": "https://dev.credissuer.com/esignet/authorize",
+  "token_endpoint": "https://dev.credissuer.com/esignet/v1/esignet/oauth/v2/token",
+  "jwks_uri": "https://dev.credissuer.com/esignet/.well-known/jwks.json",
+  "token_endpoint_auth_methods_supported": [
+    "private_key_jwt"
   ],
-  "service": [],
-  "id": "did:web:Nandeesh778.github.io:certify_test:certify_did",
-  "verificationMethod": [
-    {
-      "publicKeyMultibase": "z6MknzkWR9Fz8QgcdmAnhiuHcrV4wZnELcRCU3hBxaXaUY3w",
-      "controller": "did:web:Nandeesh778.github.io:certify_test:certify_did",
-      "id": "did:web:Nandeesh778.github.io:certify_test:certify_did#key-0",
-      "type": "Ed25519VerificationKey2020",
-      "@context": "https://w3id.org/security/suites/ed25519-2020/v1"
-    }
+  "token_endpoint_auth_signing_alg_values_supported": [
+    "RS256"
   ],
-  "@context": [
-    "https://www.w3.org/ns/did/v1"
+  "scopes_supported": [
+    "profile",
+    "email",
+    "phone"
   ],
-  "alsoKnownAs": [],
-  "authentication": [
-    "did:web:Nandeesh778.github.io:certify_test:certify_did#key-0"
+  "response_modes_supported": [
+    "query"
+  ],
+  "grant_types_supported": [
+    "authorization_code"
+  ],
+  "response_types_supported": [
+    "code"
   ]
 }
